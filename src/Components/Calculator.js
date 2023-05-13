@@ -18,7 +18,7 @@ const Calculator = () => {
       return false;
     }
 
-    setError("");
+    setError("");  
     return true;
   };
 
@@ -34,7 +34,15 @@ const Calculator = () => {
     if (!validateInput()) return;
 
     const difference = +number1 - +number2;
-    setResult(difference);
+    // setResult(difference);
+    // console.log(difference);
+    if(number1===number2)
+    {
+      setResult("0");
+    }
+    else{
+      setResult(difference);
+    }
     setSuccess(`Success:Your result is shown above! `);
   };
 
