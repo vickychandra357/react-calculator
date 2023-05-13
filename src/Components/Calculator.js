@@ -39,6 +39,7 @@ const Calculator = () => {
     if(number1===number2)
     {
       setResult("0");
+      console.log(difference);
     }
     else{
       setResult(difference);
