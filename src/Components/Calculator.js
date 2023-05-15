@@ -84,6 +84,9 @@ const Calculator = () => {
         placeholder="Num 1"
         value={number1}
         onChange={handleNumber1Change}
+
+
+        
         className="inp"
       />
       <br></br>
